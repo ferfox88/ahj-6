@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 70px;
+    background: rgba(47, 140, 202, 0.89);
+    justify-content: space-around;
+}
+
+.column {
+    width: 32%;
+    background: rgba(231, 232, 233, 0.884);
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.title {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.task {
+    width: 100%;
+    display: block;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+}
+
+.task.dragged {
+    position: absolute;
+    z-index: 999;
+    pointer-events: none;
+    border: 1px solid rgb(97, 204, 236);
+}
+
+.task:hover button {
+    display: block;
+}
+
+.task-del {
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: rgba(75, 75, 75, 0.89);
+}
+
+.task-del:hover {
+    color: rgb(0, 0, 0);
+}
+
+.add-container {
+    width: 100%;
+}
+
+.form-text {
+    width: 100%;
+    height: 70px;
+    padding-left: 3px;
+    resize: none;
+    margin-bottom: 5px;
+}
+
+.content-button {
+    display: flex;
+}
+
+.content-button-add {
+    padding: 10px;
+    background-color: rgb(98, 211, 104);
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.content-button-add:hover {
+    background-color: rgb(60, 136, 64);
+}
+
+.content-button-close {
+    padding: 10px;
+    background-color: rgba(187, 183, 183, 0.884);
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.content-button-close:hover {
+    color: red;
+}
+
+.button-add {
+    font-size: 16px;
+    border: none;
+    padding: 10px;
+    background: transparent;
+    color: rgba(75, 75, 75, 0.89)
+}
+
+.button-add:hover {
+    text-decoration: underline;
+}
